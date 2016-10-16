@@ -1,0 +1,44 @@
+<%
+let selected = {};
+let style = "class='selected'";
+let path;
+try {
+  path = originalUrl.match(/(?:^(\/\w+))/)[1];
+} catch(e) {
+  path = "/";
+}
+
+switch(path) {
+  case '/projects':
+    selected['projects'] = style;
+    break;
+  default:
+    selected['home'] = style;
+}
+
+%>
+<div class="navbarContainer">
+  <div id="navbar">
+    <a href="/" class="navLogo"><h3>Keith Armstrong</h3></a>
+    <div class="nav">
+      <ul>
+          <a href="/"><li <%- selected['home'] %>>About Me</li></a>
+          <a href="projects"><li <%- selected['projects'] %>>Projects</li></a>
+          <a href="https://500px.com/sole_wolf"><li <%- selected['photography'] %>>Photography</li></a>
+          <a href="https://blog.keitharm.me"><li <%- selected['blog'] %>>Blog</li></a>
+          <a href="resume.pdf"><li <%- selected['resume'] %>>Resume</li></a>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="mobileNav">
+  <button class="toggleButton"></button>
+  <div class="mobileMenu">
+      <a href="/"><h3>Keith Armstrong</h3></a>
+      <a href="/">About Me</a>
+      <a href="projects">Projects</a>
+      <a href="https://500px.com/sole_wolf">Photography</a>
+      <a href="https://blog.keitharm.me">Blog</a>
+      <a href="resume.pdf">Resume</a>
+  </div>
+</div>
