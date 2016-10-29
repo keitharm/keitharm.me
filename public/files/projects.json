@@ -9,8 +9,8 @@
     "lang": ["node"],
     "tech": ["express", "mysql", "socketio", "redis", "jquery"],
     "misc": ["skeleton", "ejs"],
-    "image": "randomapi.png",
-    "pictures": ["randomapi.png", "randomapi_results.png", "randomapi_dashboard.png", "randomapi_documentation.png", "randomapi_snippets.png", "randomapi_editor.png"]
+    "image": "randomapi.jpg",
+    "pictures": ["randomapi.jpg", "randomapi_results.jpg", "randomapi_dashboard.jpg", "randomapi_documentation.jpg", "randomapi_snippets.jpg", "randomapi_editor.jpg"]
 }, {
     "name": "Random User Generator",
     "seo": "random-user-generator",
@@ -22,8 +22,8 @@
     "lang": ["node"],
     "tech": ["express", "mongo", "socketio", "jquery"],
     "misc": [],
-    "image": "randomuser.png",
-    "pictures": ["randomuser.png", "randomuser_stats.png", "randomuser_psextension.png", "randomuser_docs.png", "randomuser_frontpage_docs.png", "randomuser_apicall.png"]
+    "image": "randomuser.jpg",
+    "pictures": ["randomuser.jpg", "randomuser_stats.jpg", "randomuser_psextension.jpg", "randomuser_docs.jpg", "randomuser_frontpage_docs.jpg", "randomuser_apicall.jpg"]
 }, {
     "name": "PokeMMOn",
     "seo": "pokemmon",
@@ -35,8 +35,8 @@
     "lang": ["node"],
     "tech": ["express", "jquery", "socketio"],
     "misc": ["HTML5 Canvas", "jade"],
-    "image": "pokemmon.png",
-    "pictures": ["pokemmon.png", "pokemmon.gif", "pokemmon2.gif", "pokemmon3.gif"]
+    "image": "pokemmon.jpg",
+    "pictures": ["pokemmon.jpg", "pokemmon.gif", "pokemmon2.gif", "pokemmon3.gif"]
 }, {
     "name": "Sharepos",
     "seo": "sharepos",
@@ -48,8 +48,8 @@
     "lang": ["node"],
     "tech": ["express", "angular", "socketio", "redis"],
     "misc": [],
-    "image": "sharepos.png",
-    "pictures": ["sharepos.png", "sharepos_main.png", "sharepos_multiple_users.png"]
+    "image": "sharepos.jpg",
+    "pictures": ["sharepos.jpg", "sharepos_main.jpg", "sharepos_multiple_users.jpg"]
 }, {
     "name": "Tweet Mapper",
     "seo": "tweet-mapper",
@@ -61,12 +61,12 @@
     "lang": ["node"],
     "tech": ["express", "jquery", "bootstrap"],
     "misc": [],
-    "image": "tweetmapper.png",
-    "pictures": ["tweetmapper.png", "tweetmapper_loading.png", "tweetmapper_loaded.png", "tweetmapper_focus.png"]
+    "image": "tweetmapper.jpg",
+    "pictures": ["tweetmapper.jpg", "tweetmapper_loading.jpg", "tweetmapper_loaded.jpg", "tweetmapper_focus.jpg"]
 }, {
     "name": "Picture Cipher",
     "seo": "picture-cipher",
-    "description": "Picture Cipher will encrypt a message (or even a binary) using a symmetric key and convert the output into a png mosaic of colorful pixels.<br><br>The picture can be decoded back to the original message if it is provided with the same key that was used to encrypt it.<br><br>Here is my <a href='http://localhost:3000/img/projects/picturecipher_resume_example.pdf.png' target='_blank'>resume</a> encrypted with the password \"blah\".",
+    "description": "Picture Cipher will encrypt a message (or even a binary) using a symmetric key and convert the output into a png mosaic of colorful pixels.<br><br>The picture can be decoded back to the original message if it is provided with the same key that was used to encrypt it.<br><br>Here is my <a href='http://localhost:3000/img/projects/picturecipher_resume_example.pdf.jpg' target='_blank'>resume</a> encrypted with the password \"blah\".",
     "startDate": "June 7, 2014",
     "endDate": "June 26, 2014",
     "livesite": "https://keitharm.me/projects/picturecipher",
@@ -74,8 +74,8 @@
     "lang": ["php"],
     "tech": ["bootstrap", "jquery"],
     "misc": ["ImageMagick"],
-    "image": "picturecipher.png",
-    "pictures": ["picturecipher.png", "picturecipher_check.png", "picturecipher_resume_example.pdf.png"]
+    "image": "picturecipher.jpg",
+    "pictures": ["picturecipher.jpg", "picturecipher_check.jpg", "picturecipher_resume_example.pdf.jpg"]
 }, {
     "name": "MyTube",
     "seo": "mytube",
@@ -100,8 +100,8 @@
     "lang": ["php"],
     "tech": ["mysql", "socketio", "bootstrap"],
     "misc": ["aircrack", "pyrit"],
-    "image": "wicker.png",
-    "pictures": ["wicker.png", "wicker_scan.png", "wicker_crack_success.png", "wicker_crack.png", "wicker_success.png", "wicker_inprogress.png", "wicker_settings.png"]
+    "image": "wicker.jpg",
+    "pictures": ["wicker.jpg", "wicker_scan.jpg", "wicker_crack_success.jpg", "wicker_crack.jpg", "wicker_success.jpg", "wicker_inprogress.jpg", "wicker_settings.jpg"]
 }, {
     "name": "Random Forecast",
     "seo": "random-forecast",
@@ -113,8 +113,8 @@
     "lang": ["php"],
     "tech": ["randomapi"],
     "misc": ["twitter", "yahoo"],
-    "image": "randomforecast.png",
-    "pictures": ["randomforecast.png"]
+    "image": "randomforecast.jpg",
+    "pictures": ["randomforecast.jpg"]
 }, {
     "name": "Anagram Assistant",
     "seo": "anagram-assistant",
@@ -126,8 +126,8 @@
     "lang": ["node"],
     "tech": ["jquery"],
     "misc": ["skeleton"],
-    "image": "anagramAssistant.png",
-    "pictures": ["anagramAssistant.png", "anagramAssistant_solved.png", "anagramAssistant_example.png"]
+    "image": "anagramAssistant.jpg",
+    "pictures": ["anagramAssistant.jpg", "anagramAssistant_solved.jpg", "anagramAssistant_example.jpg"]
 }, {
     "name": "Bogosort",
     "seo": "bogosort",
@@ -139,6 +139,6 @@
     "lang": ["cpp"],
     "tech": [],
     "misc": [],
-    "image": "bogosort.png",
-    "pictures": ["bogosort.png", "bogosort_solved.png"]
+    "image": "bogosort.jpg",
+    "pictures": ["bogosort.jpg", "bogosort_solved.jpg"]
 }]
