@@ -99,7 +99,6 @@ hr {
     visibility: hidden;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 25px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -113,6 +112,13 @@ hr {
     -webkit-transition: opacity .25s ease-in-out;
 }
 
+.modal span {
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
+  display: block
+}
+
 /* Modal Content (Image) */
 .modal-content {
   position: absolute;
@@ -124,6 +130,7 @@ hr {
 }
 
 #modalPic {
+  margin-bottom: 50px;
   opacity: 1;
 }
 
