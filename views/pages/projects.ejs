@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<% include ../snippets/header %>
+<head>
+  <% include ../snippets/header %>
+  <link rel="stylesheet" href="css/projects.css">
+</head>
 <body>
   <% include ../snippets/navbar %>
-  <div class="main container">
+  <div class="main container project">
     <div class="row">
-      <div class="twelve columns">
-        <table class="u-full-width">
-          <thead>
-            <tr>
-              <th>Project</th>
-              <th>Description</th>
-              <th>Start date</th>
-              <th>Technologies</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-          </tbody>
-        </table>
-
+      <div id="projectContent" class="twelve columns projectContainer">
+        <h4>My Projects</h4>
+        <p>
+          Here are some of the projects that I've worked on. If you click on a project, you'll be taken to a more in-depth page including more details as well as links to the live site and Github repo if applicable.
+        </p>
+        <br>
       </div>
     </div>
+    <a id='credits' href='files/credits.txt'>Credits for icons</a>
   </div>
   <% include ../snippets/footer %>
+  <script src='js/projects.js'></script>
 </body>
 </html>

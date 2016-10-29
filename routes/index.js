@@ -11,11 +11,15 @@ router.all('*', (req, res, next) => {
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  res.render('pages/index', _.merge(defaultVars, {title: 'Index'}));
+  res.render('pages/index', _.merge(defaultVars, {title: 'Keith Armstrong'}));
 });
 
 router.get('/projects', (req, res, next) => {
   res.render('pages/projects', _.merge(defaultVars, {title: 'Projects'}));
+});
+
+router.get('/project/:name', (req, res, next) => {
+  res.render('pages/project', _.merge(defaultVars));
 });
 
 module.exports = router;

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../snippets/header %>
+  <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+  <% include ../snippets/navbar %>
+  <div class="main container projectView">
+    <div class="row">
+      <div class="twelve columns">
+        <h3 id='title'></h3>
+        <span id='dates'></span>
+
+        <div class='links'>
+          <a id='live' href="" title="View Live Site"><img src='img/icons/link.svg'></a>
+          <a id='github' href="" title="View Github Repo"><img src='img/icons/github.png'></a>
+        </div>
+
+        <hr>
+
+        <span class='subtitle'>Description</span>
+        <div id='description' class="description">
+          <p id='description'></p>
+        </div>
+
+        <span class='subtitle'>Languages</span>
+        <div id='langs' class="langs"></div>
+
+        <span class='subtitle'>Technologies</span>
+        <div id='tech' class="tech"></div>
+
+        <span class='subtitle'>Misc</span>
+        <div id='misc' class="misc"></div>
+
+        <span class='subtitle'>Pictures</span>
+        <div id='pictures' class="pictures"></div>
+
+        <div id="modal" class="modal">
+          <span style="color: white; text-align: center; margin: auto; display: block">Hit escape or click anywhere outside of the image to close</span>
+          <a href=""><img class="modal-content" id="modalPic"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% include ../snippets/footer %>
+  <script src='js/project.js'></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+hr {
+  width: 75%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.projectView h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.projectView #description {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.projectView .langs, .projectView .tech,  .projectView .misc {
+  margin-bottom: 25px;
+}
+
+.projectView .subtitle {
+  font-size: 18pt;
+  font-weight: 200;
+}
+
+.projectView #dates {
+  display: block;
+  text-align: center;
+}
+
+.projectView .pictures {
+  cursor: pointer;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+  display: block;
+  height: 250px;
+  width: 100%;
+  white-space:nowrap;
+  overflow: scroll;
+}
+
+.projectView .pictures img {
+  cursor: pointer;
+  display: inline-block;
+  width: 200px;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 24px;
+}
+
+.projectView .links {
+  text-align: center;
+}
+
+.projectView .links #github img {
+  width: 40px;
+}
+
+.projectView .links #live img {
+  width: 28px;
+  position: relative;
+  top: -6px;
+}
+
+.projectView .links .inactive img {
+  opacity: .25;
+}
+
+.projectView .links a.inactive {
+  cursor: default !important;
+  pointer-events: none !important;
+}
+
+.projectView #credits {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.projectView #langs img, .projectView #tech img {
+  height: 25px;
+}
+
+.projectView .pictures img {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.projectView .pictures img:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    visibility: hidden;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 25px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  position: absolute;
+  margin: auto;
+  /*display: block;*/
+  right: 0px;
+  left: 0px;
+  max-height: 750px;
+}
+
+#modalPic {
+  opacity: 1;
+}
+
+#modal a {
+  z-index: 2;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 70%;
+    }
+}
+
+#leftPic button {
+  position: absolute;
+  top: 0px;
+  margin: auto;
+  bottom: 0px;
+}
+
+.pics {
+  cursor: pointer;
+}

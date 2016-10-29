@@ -10,6 +10,7 @@ try {
 
 switch(path) {
   case '/projects':
+  case '/project':
     selected['projects'] = style;
     break;
   default:
@@ -17,6 +18,8 @@ switch(path) {
 }
 
 %>
+<a href="" class="freeLogo invisible"><h3>Keith Armstrong</h3></a>
+
 <div class="navbarContainer">
   <div id="navbar">
     <a href="/" class="navLogo"><h3>Keith Armstrong</h3></a>
@@ -26,7 +29,7 @@ switch(path) {
           <a href="projects"><li <%- selected['projects'] %>>Projects</li></a>
           <a href="https://500px.com/sole_wolf"><li <%- selected['photography'] %>>Photography</li></a>
           <a href="https://blog.keitharm.me"><li <%- selected['blog'] %>>Blog</li></a>
-          <a href="resume.pdf"><li <%- selected['resume'] %>>Resume</li></a>
+          <a href="files/resume.pdf"><li <%- selected['resume'] %>>Resume</li></a>
       </ul>
     </div>
   </div>
@@ -39,6 +42,6 @@ switch(path) {
       <a href="projects">Projects</a>
       <a href="https://500px.com/sole_wolf">Photography</a>
       <a href="https://blog.keitharm.me">Blog</a>
-      <a href="resume.pdf">Resume</a>
+      <a href="files/resume.pdf">Resume</a>
   </div>
 </div>
