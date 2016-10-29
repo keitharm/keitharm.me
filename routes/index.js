@@ -1,6 +1,9 @@
+const fs      = require('fs');
 const express = require('express');
 const router  = express.Router();
 const _       = require('lodash');
+
+let projects = JSON.parse(fs.readFileSync('./public/files/projects.json', 'utf8'));
 
 // Setup defaultVars
 let defaultVars
@@ -19,7 +22,10 @@ router.get('/projects', (req, res, next) => {
 });
 
 router.get('/project/:name', (req, res, next) => {
-  res.render('pages/project', _.merge(defaultVars));
+  let project = _.find(projects, project => project.seo === req.params.name);
+  if (project === undefined) return res.redirect('/projects');
+
+  res.render('pages/project', _.merge(defaultVars, {title: project.name}));
 });
 
 module.exports = router;

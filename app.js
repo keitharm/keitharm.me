@@ -43,22 +43,22 @@ app.use((req, res, next) => {
 // will print stacktrace
 if (app.get('env') === 'development') {
   app.use((err, req, res, next) => {
-    res.status(err.status || 500);
-    res.render('pages/error', {
-      message: err.message,
-      error: err
-    });
+    res.send(err.status || 500);
+    // res.render('pages/error', {
+    //   message: err.message,
+    //   error: err
+    // });
   });
 }
 
 // production error handler
 // no stacktraces leaked to user
 app.use((err, req, res, next) => {
-  res.status(err.status || 500);
-  res.render('pages/error', {
-    message: err.message,
-    error: {}
-  });
+  res.send(err.status || 500);
+  // res.render('pages/error', {
+  //   message: err.message,
+  //   error: {}
+  // });
 });
 
 module.exports = app;

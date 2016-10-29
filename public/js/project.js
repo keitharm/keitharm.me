@@ -31,7 +31,6 @@ let miscIcons = {
 $.get("files/projects.json", data => {
   let projectName = window.location.pathname.slice(9);
   let project = _.find(data, project => project.seo === projectName);
-  if (project === undefined) window.location = '/projects';
 
   let pictures = [], lang = [], tech = [], misc = [];
 
