@@ -29,14 +29,14 @@ hr {
 }
 
 .projectView .pictures {
-  cursor: pointer;
   border: 1px solid #CCC;
   border-radius: 10px;
   display: block;
   height: 250px;
   width: 100%;
   white-space:nowrap;
-  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 
 .projectView .pictures img {
@@ -45,7 +45,7 @@ hr {
   width: 200px;
   border: 1px solid #CCC;
   border-radius: 10px;
-  margin-top: 25px;
+  margin-top: 15px;
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 24px;
@@ -153,5 +153,6 @@ hr {
 }
 
 .pics {
+  overflow-y: hidden;
   cursor: pointer;
 }

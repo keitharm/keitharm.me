@@ -58,6 +58,11 @@ $.get("files/projects.json", data => {
   $('#pictures img').on('click', image => {
     $('#modal').css('opacity', 1);
     $('#modal').css('visibility', 'visible');
+    $('html').css('overflow-y', 'hidden');
+    $('body').css('padding-right', '17px');
+    $('.footer').css('padding-right', '17px');
+    $('.nav').css('padding-right', '15.5px');
+    $('.toggleButton').css('display', 'none');
 
     $('#modalPic').attr('src', image.target.src);
     $('#modal a').attr('href', image.target.src);
@@ -79,6 +84,11 @@ $.get("files/projects.json", data => {
     function hideModal() {
       $('#modal').css('opacity', 0);
       setTimeout(() => {
+        $('html').css('overflow-y', 'scroll');
+        $('body').css('padding-right', '0px');
+        $('.footer').css('padding-right', '0px');
+        $('.nav').css('padding-right', '0px');
+        $('.toggleButton').css('display', 'initial');
         $('#modal').css('visibility', 'hidden');
       }, 250);
     }
