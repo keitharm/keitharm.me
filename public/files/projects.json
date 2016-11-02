@@ -69,7 +69,7 @@
     "description": "Picture Cipher will encrypt a message (or even a binary) using a symmetric key and convert the output into a png mosaic of colorful pixels.<br><br>The picture can be decoded back to the original message if it is provided with the same key that was used to encrypt it.<br><br>Here is my <a href='http://localhost:3000/img/projects/picturecipher_resume_example.pdf.jpg' target='_blank'>resume</a> encrypted with the password \"blah\".",
     "startDate": "June 7, 2014",
     "endDate": "June 26, 2014",
-    "livesite": "https://keitharm.me/projects/picturecipher",
+    "livesite": "https://keitharm.me/projects/picturecipher/index.php",
     "github": "https://github.com/keitharm/picturecipher",
     "lang": ["php"],
     "tech": ["bootstrap", "jquery"],
