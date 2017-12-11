@@ -36,7 +36,7 @@ $.get("files/projects.json", data => {
 
   $("#title").html(project.name);
   $("#description").html(project.description);
-  $("#dates").html(`${project.startDate} - ${project.endDate}`);
+  $("#dates").html(`${project.startDate}&nbsp;-&nbsp;${project.endDate}`);
 
   if (project.github) {
     $("#github").attr('href', project.github);
@@ -59,9 +59,6 @@ $.get("files/projects.json", data => {
     $('#modal').css('opacity', 1);
     $('#modal').css('visibility', 'visible');
     $('html').css('overflow-y', 'hidden');
-    $('body').css('padding-right', '17px');
-    $('.footer').css('padding-right', '17px');
-    $('.nav').css('padding-right', '15.5px');
     $('.toggleButton').css('display', 'none');
 
     $('#modalPic').attr('src', image.target.src);
@@ -85,9 +82,6 @@ $.get("files/projects.json", data => {
       $('#modal').css('opacity', 0);
       setTimeout(() => {
         $('html').css('overflow-y', 'scroll');
-        $('body').css('padding-right', '0px');
-        $('.footer').css('padding-right', '0px');
-        $('.nav').css('padding-right', '0px');
         $('.toggleButton').css('display', 'initial');
         $('#modal').css('visibility', 'hidden');
       }, 250);
